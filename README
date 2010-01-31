@@ -1,0 +1,23 @@
+Twitter Backup
+
+Setup:
+1 - Install the twython module from http://github.com/ryanmcgrath/twython
+2 - Install the MySQLdb module
+3 - Install MySQL and create a database to store everything in.
+4 - Run setupdb.py DBHOST DBUSER DBPASS to setup the database
+
+Running:
+Run:
+	$ backup.py DBHOST DBUSER DBPASS DBNAME
+and authenticate yourself using your twitter information and type in the 
+person's username who you wish you back up. Each time you run the script, 
+everyone who is already in the database will be checked again.
+
+TODO:
+1 - Check api calls and sleep for 1 hour if we're too low. 
+2 - Error handling for stuff...
+
+Problems:
+There may be some problems with authentication. If these errors occur, just 
+try running the script again. That usually solves the problem. I'm not sure 
+why these problems happen in the first place.
